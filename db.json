@@ -1,7 +1,6 @@
 {
   "kicks": [{
-      "id": 1,
-      "slug": "nike-air-max-270-react-eng",
+      "id": "nike-air-max-270-react-eng",
       "brand": "Nike",
       "name": "Nike Air Max 270 React ENG",
       "product_image": "270.webp",
@@ -11,8 +10,7 @@
       "images": ["nike-1.pg", "nike-2.jpg", "nike-3.jpg", "nike-4.jpg"]
     },
     {
-      "id": 2,
-      "slug": "ozweego",
+      "id": "ozweego",
       "brand": "Adidas",
       "name": "Adidas Ozweego",
       "product_image": "ozweego.webp",
@@ -27,8 +25,7 @@
       ]
     },
     {
-      "id": 3,
-      "slug": "workout-plus-shoe",
+      "id": "workout-plus-shoe",
       "brand": "Reebok",
       "name": "Workout Plus Shoe",
       "product_image": "reebok-workout.webp",
