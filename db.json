@@ -1,44 +1,46 @@
-[{
-    "id": 1,
-    "slug": "nike-air-max-270-react-eng",
-    "brand": "Nike",
-    "name": "Nike Air Max 270 React ENG",
-    "product_image": "270.webp",
-    "designer": "Unknown",
-    "price": "110",
-    "brand_logo": "nike-logo.png",
-    "images": ["nike-1.pg", "nike-2.jpg", "nike-3.jpg", "nike-4.jpg"]
-  },
-  {
-    "id": 2,
-    "slug": "ozweego",
-    "brand": "Adidas",
-    "name": "Adidas Ozweego",
-    "product_image": "ozweego.webp",
-    "designer": "Unknown",
-    "price": "110",
-    "brand_logo": "adidas-logo.png",
-    "images": [
-      "adidas-1.pg",
-      "adidas-2.jpg",
-      "adidas-3.jpg",
-      "adidas-4.jpg"
-    ]
-  },
-  {
-    "id": 3,
-    "slug": "workout-plus-shoe",
-    "brand": "Reebok",
-    "name": "Workout Plus Shoe",
-    "product_image": "reebok-workout.webp",
-    "designer": "Unknown",
-    "price": "110",
-    "brand_logo": "reebok-logo.png",
-    "images": [
-      "reebok-1.pg",
-      "reebok-2.jpg",
-      "reebok-3.jpg",
-      "reebok-4.jpg"
-    ]
-  }
-]
+{
+  "kicks": [{
+      "id": 1,
+      "slug": "nike-air-max-270-react-eng",
+      "brand": "Nike",
+      "name": "Nike Air Max 270 React ENG",
+      "product_image": "270.webp",
+      "designer": "Unknown",
+      "price": "110",
+      "brand_logo": "nike-logo.png",
+      "images": ["nike-1.pg", "nike-2.jpg", "nike-3.jpg", "nike-4.jpg"]
+    },
+    {
+      "id": 2,
+      "slug": "ozweego",
+      "brand": "Adidas",
+      "name": "Adidas Ozweego",
+      "product_image": "ozweego.webp",
+      "designer": "Unknown",
+      "price": "110",
+      "brand_logo": "adidas-logo.png",
+      "images": [
+        "adidas-1.pg",
+        "adidas-2.jpg",
+        "adidas-3.jpg",
+        "adidas-4.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "workout-plus-shoe",
+      "brand": "Reebok",
+      "name": "Workout Plus Shoe",
+      "product_image": "reebok-workout.webp",
+      "designer": "Unknown",
+      "price": "110",
+      "brand_logo": "reebok-logo.png",
+      "images": [
+        "reebok-1.pg",
+        "reebok-2.jpg",
+        "reebok-3.jpg",
+        "reebok-4.jpg"
+      ]
+    }
+  ]
+}
