@@ -1,20 +1,42 @@
 import Head from "next/head";
-import { Box, Flex, Grid } from "@chakra-ui/core";
+import { Box, Flex, Grid, Alert } from "@chakra-ui/core";
+import useSWR from "swr";
+import { motion } from "framer-motion";
+import { stagger } from "../utils/animation";
 
 //components
 import Search from "../components/Search";
 import LeftSideBar from "../components/Content/LeftSideBar";
 import ProductCard from "../components/ProductCard";
-import data from "../data/data.json";
-import { useState } from "react";
+
+const MotionBox = motion.custom(Box);
 
 export default function Home() {
-  const [products, setProducts] = useState(data);
+  const API_URL =
+    "https://my-json-server.typicode.com/jaeyholic/dope-kicks/kicks";
 
-  console.log(products);
+  const fetcher = async (url) => await fetch(url).then((res) => res.json());
+
+  const { data, error } = useSWR(API_URL, fetcher);
+
+  if (!data) {
+    return <Box>Loading...</Box>;
+  }
+
+  if (error) {
+    return <Alert>Error Occured</Alert>;
+  }
+
+  console.log(data);
 
   return (
-    <Box fontFamily="body" pos="relative">
+    <MotionBox
+      fontFamily="body"
+      pos="relative"
+      exit={{ opacity: 0 }}
+      initial="initial"
+      animate="animate"
+    >
       <Head>
         <title>Kicks Store Home</title>
         <link rel="icon" href="/favicon.ico" />
@@ -41,22 +63,30 @@ export default function Home() {
             <LeftSideBar />
           </Box>
 
-          <Box w="70%" pos="absolute" right={0}>
+          <MotionBox w="70%" pos="absolute" right={0} variants={stagger}>
             <Grid templateColumns={{ md: "repeat(3, 1fr)" }} gap={6}>
-              {products.map((item) => (
+              {data.map((item) => (
                 <ProductCard
                   key={item.id}
                   brand={item.brand}
                   name={item.name}
-                  link={item.slug}
+                  link={item.id}
                   img={`/images/${item.product_image}`}
                   price={item.price}
                 />
               ))}
             </Grid>
-          </Box>
+          </MotionBox>
         </Flex>
       </Box>
-    </Box>
+    </MotionBox>
   );
 }
+
+Home.getInitialProps = async () => {
+  const res = await fetch(
+    "https://my-json-server.typicode.com/jaeyholic/dope-kicks/kicks"
+  );
+  const data = await res.json();
+  return { products: data };
+};

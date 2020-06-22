@@ -1,5 +1,7 @@
 import { Container } from "next/app";
-import { ThemeProvider, CSSReset, theme } from "@chakra-ui/core";
+import { ThemeProvider, CSSReset, theme, Box } from "@chakra-ui/core";
+import { AnimatePresence } from "framer-motion";
+
 import "../styles/index.css";
 import NavBar from "../components/Nav";
 
@@ -192,10 +194,12 @@ const App = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={customTheme}>
       <CSSReset />
-      <Container>
+      <Box>
         <NavBar />
-        <Component {...pageProps} />
-      </Container>
+        <AnimatePresence exitBeforeEnter>
+          <Component {...pageProps} />
+        </AnimatePresence>
+      </Box>
     </ThemeProvider>
   );
 };

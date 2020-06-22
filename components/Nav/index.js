@@ -37,7 +37,7 @@ const NavBar = () => {
           ml={10}
           fontFamily="black"
           fontWeight="bold"
-          color={router.pathname === "/shop" ? "white" : "black"}
+          color={router.pathname === `/products/[id]` ? "white" : "black"}
         >
           Dope Kicks
         </Heading>
