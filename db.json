@@ -1,6 +1,5 @@
 {
-  "kicks": [
-    {
+  "kicks": [{
       "id": "nike-air-max-270-react-eng",
       "brand": "Nike",
       "name": "Nike Air Max 270 React ENG",
@@ -8,11 +7,18 @@
       "designer": "Unknown",
       "price": "110",
       "brand_logo": "nike-logo.png",
-      "images": [
-        { "img": "nike-1.jpg" },
-        { "img": "nike-2.jpg" },
-        { "img": "nike-3.jpg" },
-        { "img": "nike-4.jpg" }
+      "images": [{
+          "img": "nike-1.jpg"
+        },
+        {
+          "img": "nike-2.jpg"
+        },
+        {
+          "img": "nike-3.jpg"
+        },
+        {
+          "img": "nike-4.jpg"
+        }
       ]
     },
     {
@@ -23,11 +29,18 @@
       "designer": "Unknown",
       "price": "110",
       "brand_logo": "adidas-logo.png",
-      "images": [
-        { "img": "adidas-1.jpg" },
-        { "img": "adidas-2.jpg" },
-        { "img": "adidas-3.jpg" },
-        { "img": "adidas-4.jpg" }
+      "images": [{
+          "img": "adidas-1.jpg"
+        },
+        {
+          "img": "adidas-2.jpg"
+        },
+        {
+          "img": "adidas-3.jpg"
+        },
+        {
+          "img": "adidas-4.jpg"
+        }
       ]
     },
     {
@@ -38,11 +51,84 @@
       "designer": "Unknown",
       "price": "110",
       "brand_logo": "reebok-logo.png",
-      "images": [
-        { "img": "reebok-1.jpg" },
-        { "img": "reebok-2.jpg" },
-        { "img": "reebok-3.jpg" },
-        { "img": "reebok-4.jpg" }
+      "images": [{
+          "img": "reebok-1.jpg"
+        },
+        {
+          "img": "reebok-2.jpg"
+        },
+        {
+          "img": "reebok-3.jpg"
+        },
+        {
+          "img": "reebok-4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "balenciaga-triple-s",
+      "brand": "Balenciaga",
+      "name": "Balenciaga Triple S",
+      "product_image": "balenciaga.webp",
+      "designer": "Unknown",
+      "price": "650",
+      "brand_logo": "balenciaga-logo.png",
+      "images": [{
+          "img": "balenciaga-1.jpg"
+        },
+        {
+          "img": "balenciaga-2.jpg"
+        },
+        {
+          "img": "balenciaga-3.jpg"
+        },
+        {
+          "img": "balenciaga-4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "air-jordan-1",
+      "brand": "Jordan",
+      "name": "Air Jordan 1",
+      "product_image": "jordan.webp",
+      "designer": "Unknown",
+      "price": "250",
+      "brand_logo": "jordan.png",
+      "images": [{
+          "img": "jordan-1.jpg"
+        },
+        {
+          "img": "jordan-2.jpg"
+        },
+        {
+          "img": "jordan-3.jpg"
+        },
+        {
+          "img": "jordan-4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "fila-disruptor-2",
+      "brand": "Fila",
+      "name": "Fila Disruptor 2",
+      "product_image": "fila.webp",
+      "designer": "Unknown",
+      "price": "300",
+      "brand_logo": "fila-logo.png",
+      "images": [{
+          "img": "fila-1.jpg"
+        },
+        {
+          "img": "fila-2.jpg"
+        },
+        {
+          "img": "fila-3.jpg"
+        },
+        {
+          "img": "fila-4.jpg"
+        }
       ]
     }
   ]
