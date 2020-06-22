@@ -118,12 +118,12 @@ const Product = () => {
             _hover={{ textDecor: "none", color: "gray.900" }}
             fontFamily="bold"
           >
-            <MotionBox px={48} mt={20} variants={fadeInUp}>
+            <MotionBox px={48} mt={16} variants={fadeInUp}>
               <Icon name="arrow-back" /> Back to products
             </MotionBox>
           </Link>
         </ReachLink>
-        <Box px={48} py={24}>
+        <Box px={48} py={20}>
           <Box>
             <MotionHeading
               as="h1"
