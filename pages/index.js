@@ -64,7 +64,11 @@ export default function Home() {
           </Box>
 
           <MotionBox w="70%" pos="absolute" right={0} variants={stagger}>
-            <Grid templateColumns={{ md: "repeat(3, 1fr)" }} gap={6}>
+            <Grid
+              templateColumns={{ md: "repeat(3, 1fr)" }}
+              gap={6}
+              mb={{ md: 20 }}
+            >
               {data.map((item) => (
                 <ProductCard
                   key={item.id}
